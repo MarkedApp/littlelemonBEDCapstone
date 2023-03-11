@@ -21,7 +21,7 @@ from rest_framework.routers import DefaultRouter
 router = DefaultRouter()
 routermenu = DefaultRouter()
 router.register(r'tables', views.BookingViewSet)
-routermenu.register(r'menus', views.MenuViewSet)
+routermenu.register(r'items', views.MenuViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
