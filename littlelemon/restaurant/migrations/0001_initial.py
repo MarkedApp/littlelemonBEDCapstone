@@ -25,10 +25,11 @@ class Migration(migrations.Migration):
             name='Menu',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('MenuId', models.IntegerField(max_length=5)),
+                ('MenuId', models.IntegerField(max_length=5, default=1)),
                 ('Title', models.CharField(max_length=255)),
                 ('Price', models.DecimalField(decimal_places=2, max_digits=10)),
                 ('Inventory', models.IntegerField(max_length=5)),
+                ('ModelId', models.IntegerField(default=1)),
             ],
         ),
     ]
